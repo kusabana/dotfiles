@@ -1,0 +1,2 @@
+# dotfiles
+minimal sway config

@@ -1,0 +1,15 @@
+### variables
+set $mod Mod4
+
+### input
+input "1739:52804:MSFT0001:01_06CB:CE44_Touchpad" {
+    natural_scroll enabled
+}
+
+### output
+output * bg ~/sync/pictures/wallpapers/wallhaven-vg8mo8.jpg fill
+output eDP-1 resolution 2880x1800 scale 1.15
+
+gaps inner 20
+
+include ~/.config/sway/conf.d/*

@@ -1,0 +1,18 @@
+# class                 border  bground text    indicator child_border
+client.focused          #468A5C #67A96F #FFFFFF #468A5C   #468A5C
+client.focused_inactive #222222 #222222 #FFFFFF #222222   #222222
+client.unfocused        #222222 #222222 #888888 #222222   #222222
+client.urgent           #222222 #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
+
+bar {
+    position top
+    status_command while echo \"$(cat /sys/class/power_supply/BAT0/status) - $(cat /sys/class/power_supply/BAT0/capacity)% |  $(date +'%Y-%m-%d %I:%M:%S %p')"; do sleep 1; done
+
+    colors {
+        background #222222
+        focused_workspace #468a5c #67a96f #ffffff
+    }
+}
