@@ -12,4 +12,6 @@ output eDP-1 resolution 2880x1800 scale 1.15
 
 gaps inner 20
 
+for_window [class=.*] inhibit_idle fullscreen
+
 include ~/.config/sway/conf.d/*
