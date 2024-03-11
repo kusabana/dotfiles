@@ -6,6 +6,7 @@ bindsym Print exec grim -g "$(slurp)" -t png - | wl-copy -t image/png
 
 # sway
 bindsym $mod+Shift+c reload
+bindsym $mod+space floating toggle
 floating_modifier $mod normal
 
 # window
